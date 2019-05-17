@@ -1,4 +1,4 @@
-# Add  code here!
+require 'pry'# Add  code here!
 def prime?(number)
   n = (2..number-1).to_a
   return false if number <= 1
@@ -7,3 +7,4 @@ def prime?(number)
     end
   return true
 end
+binding.pry
