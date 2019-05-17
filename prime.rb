@@ -8,4 +8,3 @@ def prime?(number)
     binding.pry
   return true
 end
-
