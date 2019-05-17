@@ -1,10 +1,11 @@
 require 'pry'# Add  code here!
-def prime?(number)
-  n = (2..number-1).to_a
-  return false if number <= 1
-  n.each do |integer|
-    return false if number % integer == 0
+def prime?(num)
+  if num < 0 or num == 0 or num == 1
+    return false
+  else
+    (2..num-1).to_a.all? do |possible_factor|
+      num % possible_factor != 0
     end
-  return true
+  end
 end
   binding.pry
