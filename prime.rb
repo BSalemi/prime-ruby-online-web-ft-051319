@@ -5,6 +5,7 @@ def prime?(number)
   n.each do |integer|
     return false if number % integer == 0
     end
+    binding.pry
   return true
 end
-binding.pry
+
