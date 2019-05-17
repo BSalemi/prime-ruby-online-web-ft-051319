@@ -4,10 +4,7 @@ def prime?(number)
   return false if number <= 1
   return true if number == 2 || number == 3
   n.each do |integer|
-    if integer % 2 == 0
-      return false
-    else
-      return true
+    return false if integer % 2 == 0
     end
-  end
+  return true
 end
