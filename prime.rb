@@ -4,8 +4,7 @@ def prime?(number)
   return false if number <= 1
   n.each do |integer|
     return false if number % integer == 0
-    binding.pry
     end
-
   return true
 end
+  binding.pry
